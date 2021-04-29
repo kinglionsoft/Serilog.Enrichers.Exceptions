@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>net5.0;netcoreapp3.1</TargetFrameworks>
-    <Version>0.0.4</Version>
+    <Version>0.0.6</Version>
     <Description>输出更加友好的异常信息</Description>
   </PropertyGroup>
 
