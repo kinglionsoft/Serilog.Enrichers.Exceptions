@@ -91,7 +91,7 @@ namespace Serilog.Enrichers.Exceptions
 
         private static string ToAsyncStringCore(Exception exception, bool includeMessageOnly)
         {
-            var message = exception.Message;
+            var message = exception.Message.Replace(Environment.NewLine, " ");
             var className = exception.GetType().ToString();
             var s = message.Length <= 0 ? className : className + ": " + message;
 
